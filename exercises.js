@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_19();
+  exercise_24();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -493,7 +493,17 @@ function exercise_20() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let fruitColor = "red";
+  switch (fruitColor) {
+    case "red":
+      console.log("Apple");
+      break;
+    case "yellow":
+      console.log("Banana");
+      break;
+    default:
+      console.log("Unknown Fruit");
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -516,7 +526,14 @@ function exercise_21() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let numCheck = -20;
+  if (numCheck > 0) {
+    console.log("Positive");
+  } else if (numCheck < 0) {
+    console.log("Negative");
+  } else {
+    console.log("Zero");
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -540,7 +557,9 @@ function exercise_22() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let age = 22;
+  let canVote = age >= 18 ? "Yes, can vote" : "No, too young";
+  console.log(canVote);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -569,7 +588,14 @@ function exercise_23() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let isProgramMember = true;
+  let age = 66;
+  const eligDiscount = isProgramMember && (age < 16 || age > 65);
+  if (eligDiscount) {
+    console.log("Eligable for a special Discount");
+  } else {
+    console.log("Not eligable for special!");
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -589,7 +615,17 @@ function exercise_24() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let day = "Friday";
+  switch (day.toLowerCase()) {
+    case "friday":
+      console.log("Weekday");
+      break;
+    case "saturday":
+      console.log("Weekend");
+      break;
+    default:
+      console.log("Weekday");
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
